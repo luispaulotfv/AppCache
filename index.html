@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html manifest="tripointAppCache.appcache">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripoint Offline</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel panel-default" style="margin-top: 20px;">
+            <div class="panel-heading">
+                <h3>Tripoint Offline ...</h3>
+                <h6>Após a primeira visita pode usar o site em modo offline.</h6>
+                <hr/>
+                <h4>Toda <strong>a informação é ficticia</strong>, este site é meramente experimental ...</h4>
+                <h6 id="help-container" class="text-info"></h6>
+                <hr/>
+                <h4>O browser encontra-se em modo <span id="browser-mode" class="text-danger"></span></h4>
+            </div>
+            <div class="panel-body">
+                <div id="list-container"></div>
+                <div id="detail-container"></div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-default" onclick="usedLocalStorage()">Espaço ocupado no local storage</button>
+                <h4 id="localStorageUsedSpace" class="text-warning text-center"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
